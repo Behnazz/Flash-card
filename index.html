@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="style.css">
+  <title>Flash Cards</title>
+</head>
+<body>
+  <button id="clear" class="clear btn">
+    <i class="fas fa-trash"></i> Clear Cards
+  </button>
+  <h1>Flash Cards
+    <button id="show" class="btn btn-small">
+      <i class="fas fa-plus"></i> Add New card
+    </button>
+  </h1>
+  <section id="cards-container" class="cards">
+    <!-- <section class="card active">
+      <section class="inner-card">
+        <section class="inner-card-front">
+          <p>
+            What is PHP?
+          </p>
+        </section>
+        <section class="inner-card-back">
+          <p>
+            it is a programming language
+          </p>
+        </section>
+      </section>
+    </section>
+      <section class="card">
+      <section class="inner-card">
+        <section class="inner-card-front">
+          <p>
+            What is PHP?
+          </p>
+        </section>
+        <section class="inner-card-back">
+          <p>
+            it is a programming language
+          </p>
+        </section>
+      </section>
+    </section> -->
+  </section>
+  <nav class=" navigation">
+    <button id="prev" class="nav-button">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <p id="current"></p>
+    <button id="next" class="nav-button">
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </nav>
+  <section id="add-container" class="add-container">
+    <h1>
+      Add New Card
+      <button id="hide" class="btn btn-small btn-ghost">
+        <i class="fas fa-times"></i>
+      </button>
+    </h1>
+    <section class="form-group">
+      <label for="question">Question</label>
+      <textarea id="question" placeholder="Enter Question"></textarea>
+    </section>
+    <section class="form-group">
+      <label for="answer">Answer</label>
+      <textarea id="answer" placeholder="Enter Answer"></textarea>
+    </section>
+    <button id="add-card" class="btn">
+      <i class="fas fa-plus"></i>Add card
+    </button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
