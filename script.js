@@ -126,5 +126,5 @@ addCardBtn.addEventListener('click', () => {
 clearBtn.addEventListener('click', () => {
   cardsEl[currentActiveCard].innerHTML = '';
 
-  updateCurrentText() -1;
+  updateCurrentText();
 })
